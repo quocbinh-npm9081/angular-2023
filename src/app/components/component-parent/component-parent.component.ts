@@ -5,10 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './component-parent.component.html',
   styleUrls: ['./component-parent.component.scss'],
 })
-export class ComponentParentComponent implements OnInit {
-  ngOnInit(): void {
-    console.log('onInit run');
-  }
+export class ComponentParentComponent {
+  // ngOnInit(): void {
+  //   console.log('onInit run');
+  // }
   //states
   //userName: any = ['binh']; //useState
   userName: any = 'binh'; //useState
