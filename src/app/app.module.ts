@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { ComponentOverviewByCliComponent } from './component-overview-by-cli/component-overview-by-cli.component';
 import { HeroChildComponent } from './decoration/hero-child/hero-child.component';
 import { HeroParentComponent } from './decoration/hero-parent/hero-parent.component';
+import { VersionChildComponent } from './decoration/version-child/version-child.component';
+import { VersionParentComponent } from './decoration/version-parent/version-parent.component';
 
 @NgModule({
-  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent],
+  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent], //metadata định nghĩa AppComponent chạy đầu tiên
