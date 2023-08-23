@@ -11,6 +11,7 @@ import {
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked,
+  OnDestroy,
 } from '@angular/core';
 
 @Component({
@@ -25,13 +26,15 @@ export class ComponentChildrenComponent
     AfterContentInit,
     AfterContentChecked,
     AfterViewInit,
-    AfterViewChecked
+    AfterViewChecked,
+    OnDestroy
 {
+  //PROPS
+  @Input() userName = '';
+  //userRef
   @ViewChild('wrapper') wrapper!: ElementRef;
   @ContentChild('contentWrapper') contentWrapper!: ElementRef;
 
-  //PROPS
-  @Input() userName = '';
   ngOnInit(): void {
     console.log('onInit children run');
   }
@@ -60,5 +63,10 @@ export class ComponentChildrenComponent
 
   ngAfterViewChecked(): void {
     console.log('ngAfterViewChecked');
+  }
+
+  //DESTROY
+  ngOnDestroy(): void {
+    console.log('COMPONENT WAS DESTROYED !');
   }
 }

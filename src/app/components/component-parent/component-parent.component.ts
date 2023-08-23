@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-parent.component.scss'],
 })
 export class ComponentParentComponent {
+  isChildrenDestroys: Boolean = false;
   // ngOnInit(): void {
   //   console.log('onInit run');
   // }
@@ -15,4 +16,7 @@ export class ComponentParentComponent {
   //methods
   // updateUser = () => this.userName.push('An');
   updateUser = () => (this.userName = 'An');
+  destroy(): void {
+    this.isChildrenDestroys = true;
+  }
 }

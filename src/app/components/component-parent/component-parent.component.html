@@ -1,7 +1,10 @@
 <p>Click button update name</p>
 
 <button (click)="updateUser()">Update userName</button>
+<button (click)="destroy()">Remove Children</button>
 
-<app-component-children [userName]="userName">
+<app-component-children *ngIf="!isChildrenDestroys" [userName]="userName">
   <div #contentWrapper>ngAfterContentInti</div>
 </app-component-children>
+
+<h1 *ngIf="isChildrenDestroys">Children component was destroyed!</h1>
