@@ -8,9 +8,11 @@ import { HeroChildComponent } from './decoration/hero-child/hero-child.component
 import { HeroParentComponent } from './decoration/hero-parent/hero-parent.component';
 import { VersionChildComponent } from './decoration/version-child/version-child.component';
 import { VersionParentComponent } from './decoration/version-parent/version-parent.component';
+import { VoteChildrenComponent } from './decoration/vote-children/vote-children.component';
+import { VoteParentComponent } from './decoration/vote-parent/vote-parent.component';
 
 @NgModule({
-  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent],
+  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent, VoteChildrenComponent, VoteParentComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent], //metadata định nghĩa AppComponent chạy đầu tiên
