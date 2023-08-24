@@ -10,9 +10,11 @@ import { VersionChildComponent } from './decoration/version-child/version-child.
 import { VersionParentComponent } from './decoration/version-parent/version-parent.component';
 import { VoteChildrenComponent } from './decoration/vote-children/vote-children.component';
 import { VoteParentComponent } from './decoration/vote-parent/vote-parent.component';
+import { CountdownParentComponent } from './decoration/countdown-parent/countdown-parent.component';
+import { CountdownChildrenComponent } from './decoration/countdown-children/countdown-children.component';
 
 @NgModule({
-  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent, VoteChildrenComponent, VoteParentComponent],
+  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent, VoteChildrenComponent, VoteParentComponent, CountdownParentComponent, CountdownChildrenComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent], //metadata định nghĩa AppComponent chạy đầu tiên

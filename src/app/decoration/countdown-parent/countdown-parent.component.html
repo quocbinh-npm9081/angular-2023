@@ -1,0 +1,5 @@
+<p>countdown-parent works!</p>
+<app-countdown-children #countdown></app-countdown-children>
+<h1>{{ countdown.count }}</h1>
+<button type="button" (click)="countdown.increase(1)">Increase</button>
+<button type="button" (click)="countdown.decrease(1)">Decrease</button>
