@@ -14,9 +14,11 @@ import { CountdownParentComponent } from './decoration/countdown-parent/countdow
 import { CountdownChildrenComponent } from './decoration/countdown-children/countdown-children.component';
 import { MultiplicationChildrenComponent } from './decoration/multiplication-children/multiplication-children.component';
 import { MultiplicationParentComponent } from './decoration/multiplication-parent/multiplication-parent.component';
+import { MissionControllComponent } from './decoration/mission-controll/mission-controll.component';
+import { AstronautComponent } from './decoration/astronaut/astronaut.component';
 
 @NgModule({
-  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent, VoteChildrenComponent, VoteParentComponent, CountdownParentComponent, CountdownChildrenComponent, MultiplicationChildrenComponent, MultiplicationParentComponent],
+  declarations: [AppComponent, ComponentOverviewByCliComponent, HeroChildComponent, HeroParentComponent, VersionChildComponent, VersionParentComponent, VoteChildrenComponent, VoteParentComponent, CountdownParentComponent, CountdownChildrenComponent, MultiplicationChildrenComponent, MultiplicationParentComponent, MissionControllComponent, AstronautComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent], //metadata định nghĩa AppComponent chạy đầu tiên
